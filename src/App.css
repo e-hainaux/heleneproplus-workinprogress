@@ -96,10 +96,19 @@ p {
   text-decoration: none;
   font-size: 1.2em;
   transition: color 0.3s ease;
+
+  /* Ajout des propriétés pour supprimer la surbrillance */
+  -webkit-tap-highlight-color: transparent;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  outline: none;
+  touch-action: manipulation;
 }
 
 .linkedin:hover {
-  color: #0a66c2; /* couleur pour LinkedIn */
+  color: #0a66c2;
 }
 
 .social-links a.instagram {
