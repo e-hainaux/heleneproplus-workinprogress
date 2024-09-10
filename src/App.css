@@ -107,6 +107,11 @@ p {
   touch-action: manipulation;
 }
 
+.social-links a:active {
+  outline: none;
+  background-color: transparent;
+}
+
 .linkedin:hover {
   color: #0a66c2;
 }
