@@ -1,38 +1,144 @@
 .App {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: #282c34;
 }
 
 .App-logo {
-  height: 40vmin;
+  width: 25%;
+  height: auto;
   pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
 }
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  width: 100vw;
+  height: auto;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  gap: 48px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+h1 {
+  font-size: 16px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+p {
+  text-align: center;
+  width: 88%;
+}
+
+.p-footer {
+  text-align: right;
+  width: 100%;
+}
+
+.App-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  width: 88vw;
+  height: 100%;
+  text-align: center;
+  padding: 20px;
+  color: white;
+  background-color: #282c34;
+}
+
+.App-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  width: 100vw;
+  height: 100%;
+  color: white;
+  background-color: #282c34;
+}
+
+.social-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  gap: 15px;
+}
+
+.social-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2em;
+  transition: color 0.3s ease;
+}
+
+.social-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  gap: 15px;
+}
+
+.social-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2em;
+  transition: color 0.3s ease;
+}
+
+.linkedin:hover {
+  color: #0a66c2; /* couleur pour LinkedIn */
+}
+
+.social-links a.instagram {
+  position: relative;
+}
+
+.social-links a.instagram svg {
+  fill: white;
+  transition: fill 0.3s ease;
+}
+
+.social-links a.instagram:hover svg {
+  fill: url(#instagram-gradient);
+}
+
+.facebook:hover {
+  color: #0866ff;
+}
+
+@media (max-width: 1024px) {
+  .App-logo {
+    width: 33%;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+@media (max-width: 799px) {
+  .App-logo {
+    width: 42%;
+  }
+}
+
+@media (max-width: 600px) {
+  .App-logo {
+    width: 50%;
+  }
+}
+
+@media (max-width: 600px) {
+  .App-logo {
+    width: 60%;
   }
 }
