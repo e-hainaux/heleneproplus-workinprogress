@@ -1,14 +1,22 @@
 .App {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   width: 100vw;
   height: 100vh;
   background-color: #282c34;
 }
 
-.App-logo {
+.Images-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10vw;
+}
+
+.Image {
   width: 25%;
   height: auto;
   pointer-events: none;
@@ -16,8 +24,8 @@
 
 .App-header {
   background-color: #282c34;
-  width: 100vw;
-  height: auto;
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -28,6 +36,7 @@
 
 h1 {
   font-size: 16px;
+  margin-top: 24px;
 }
 
 p {
@@ -46,8 +55,8 @@ p {
   justify-content: center;
   align-items: center;
   gap: 24px;
-  width: 88vw;
-  height: 100%;
+  width: 80%;
+  height: auto;
   text-align: center;
   padding: 20px;
   color: white;
@@ -130,25 +139,48 @@ p {
 }
 
 @media (max-width: 1024px) {
-  .App-logo {
+  .Image {
     width: 33%;
   }
 }
 
 @media (max-width: 799px) {
-  .App-logo {
+  .Image {
     width: 42%;
   }
 }
 
 @media (max-width: 600px) {
-  .App-logo {
-    width: 50%;
+  h1 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px 0px 0px 0px;
   }
-}
 
-@media (max-width: 600px) {
-  .App-logo {
-    width: 60%;
+  .App-body p {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+
+  .Image {
+    width: 66%;
+  }
+  .Images-group {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    margin: 0;
+  }
+
+  .App-footer {
+    padding-bottom: 24px;
   }
 }

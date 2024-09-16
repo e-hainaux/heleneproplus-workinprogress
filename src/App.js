@@ -1,6 +1,8 @@
 import React from "react";
 import { FaInstagram, FaFacebook } from "react-icons/fa";
-import logo from "./LogoHelene.png";
+
+import rectoVisitCard from "./images/rectoVisitCard.jpg";
+import versoVisitCard from "./images/versoVisitCard.jpg";
 import "./App.css";
 
 function App() {
@@ -14,7 +16,10 @@ function App() {
         <p>
           Vous pouvez me contacter par téléphone ou par mail à votre convenance.
         </p>
-        <img src={logo} className="App-logo" alt="logo" />
+        <div className="Images-group">
+          <img src={rectoVisitCard} className="Image" alt="logo" />
+          <img src={versoVisitCard} className="Image" alt="logo" />
+        </div>
       </body>
 
       <footer className="App-footer">
