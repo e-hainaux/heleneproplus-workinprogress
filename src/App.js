@@ -1,5 +1,5 @@
 import React from "react";
-import { FaLinkedin, FaInstagram, FaFacebook } from "react-icons/fa";
+import { FaInstagram, FaFacebook } from "react-icons/fa";
 import logo from "./LogoHelene.png";
 import "./App.css";
 
@@ -21,16 +21,7 @@ function App() {
         <p className="p-footer">Suivez-moi sur :</p>
         <div className="social-links">
           <a
-            href="https://www.linkedin.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="LinkedIn"
-            className="linkedin"
-          >
-            <FaLinkedin size={30} />
-          </a>
-          <a
-            href="https://www.instagram.com"
+            href="https://www.instagram.com/heleneproplus/"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Instagram"
@@ -54,7 +45,7 @@ function App() {
             <FaInstagram size={30} />
           </a>
           <a
-            href="https://www.facebook.com"
+            href="https://www.facebook.com/profile.php?id=61560574860171"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Facebook"
